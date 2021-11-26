@@ -1,0 +1,282 @@
+.k1 {
+    background-color: blue;
+    border-radius: 50px;
+    color: white;
+    padding: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(img/trojkont.jpg);
+    color: white
+}
+
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3E065F;
+    -webkit-box-shadow: 4px 40px 61px 13px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 4px 40px 61px 13px rgba(255, 255, 255, 1);
+    box-shadow: 4px 40px 61px 13px rgba(255, 255, 255, 1);
+}
+
+.brand-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.brand-title a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.brand-title a:hover {
+    color: #8E05C2;
+}
+
+
+.navbar-links {
+    transition: all .2s ease-in-out;
+}
+
+.navbar-links ul {
+    display: flex;
+    color: white;
+    transition: .3s all ease-in-out;
+}
+
+.navbar-links li {
+    list-style-type: none;
+}
+
+.active {
+    transition: 0.2s all ease-in-out;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: .6rem;
+    font-size: 1.5rem;
+    transition: .2s all ease-in-out;
+    font-weight: 600;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.navbar li a:hover {
+    color: #8E05C2;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 40px;
+}
+
+.toggle-button .bar {
+    height: 4.7px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.kolor {
+    background-color: #8E05C2;
+    padding: 7px;
+    border-radius: 40px;
+    transition: .2s ease-in-out all;
+}
+
+.kolor:hover {
+    background-color: #3E065F;
+    color: gray;
+}
+
+
+@media (max-width: 750px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li{
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+        margin-bottom: 20px;
+    }
+
+    .navbar-links ul li:hover{
+        background-color: #3f073f5F;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .kolor {
+        background-color: #3E065F;
+        border-radius: 40px;
+        transition: .2s ease-in-out all;
+    }
+
+    .kolor:hover {
+        background-color: #3E065F;
+        color: #8E05C2;
+    }
+
+
+}
+
+/* ------------------- navbar ----------------*/
+
+
+
+.main {
+    width: 70%;
+    background: #8E05C2;
+    height: 10000px;
+    margin: 0px auto;
+    -webkit-box-shadow: 4px 47px 61px 13px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 4px 47px 61px 13px rgba(255, 255, 255, 1);
+    box-shadow: 4px 47px 61px 13px rgba(255, 255, 255, 1);
+    margin-top: -22px;
+    opacity: 80%;
+
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 0 2rem;
+    opacity: 100%;
+}
+
+main {
+    display: flex;
+}
+
+article{
+    display: grid;
+    grid-template-rows: 5%;
+    width: 70%;
+    background-color: #3E065F;
+    min-height: 100%;
+    margin-left: 20px;
+    border-radius: 20px;
+    border:#FFFFFF .5px solid;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+article img {
+    margin: 0px;
+    padding: 0 4rem;
+
+}
+
+.plan {
+    width: 650px; 
+    height: 300px;
+}
+
+@media (max-width: 1632px) {
+
+    .plan {
+        width: 325.5px; 
+        height: 150px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .plan {
+        width: 325.5px; 
+        height: 150px;
+    }
+
+    article {
+        grid-template-rows: 10%;
+    }
+}
+
+aside {
+    border-radius: 20px;
+    width: 25%;
+    height: 2000px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    border:#3E065F .5px solid;
+
+}
+
+
+
+
+@media (max-width: 950px) {
+    main {
+        display: block;
+    }
+
+    article {
+        width: 90%;
+        margin: auto;
+        height: 1000px;
+    }
+
+    aside {
+        width: 90%;
+        margin: auto;
+    }
+
+
+}
+
+
+
+
+/* ------------- Main ------------*/
