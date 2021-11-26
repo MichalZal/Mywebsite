@@ -179,6 +179,10 @@ body {
 
 }
 
+header {
+    margin: 0 auto;
+}
+
 header h1 {
     width: 100%;
     text-align: center;
@@ -232,6 +236,8 @@ article img {
     }
 }
 
+
+
 @media (max-width: 950px) {
 
     .plan {
@@ -241,24 +247,35 @@ article img {
 
     article {
         grid-template-rows: 10%;
+    }    
+
+}
+
+@media (max-width: 720px) {
+    .plan {
+        width: 162.5px;
+        height: 75px;
+        padding: 0;
+        margin: 0;
     }
 }
 
-@media (max-width: 375px) {
-    .navbar {
-        width: 65vh;
+@media (max-width: 465px) {
 
+}
+
+@media (max-width: 350px) {
+    header h1 {
+        font-size: .8rem;
     }
+
+    .main {
+        margin-top: -10px;
+    }
+
 }
 
-article h1 {
-    display: none;
-        
-}
 
-.plan {
-    display: none;
-}
 
 aside {
     border-radius: 20px;
