@@ -244,6 +244,22 @@ article img {
     }
 }
 
+@media (max-width: 375px) {
+    .navbar {
+        width: 65vh;
+
+    }
+}
+
+article h1 {
+    display: none;
+        
+}
+
+.plan {
+    display: none;
+}
+
 aside {
     border-radius: 20px;
     width: 25%;
@@ -267,6 +283,8 @@ aside {
         margin: auto;
         height: 1000px;
     }
+
+
 
     aside {
         width: 90%;
